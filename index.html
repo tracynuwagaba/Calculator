@@ -4,226 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Calculator</title>
   </head>
   <body>
     <main>
-      <div class="container">
-        <div class="phone-exterior">
-          <div class="top-row-container">
-            <div class="circle1"></div>
-            <div class="circle2"></div>
-            <div class="silver-line">
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-              <div class="tiny-circle"></div>
-            </div>
-            <div class="circle3">
-              <div class="blinking-circle"></div>
-            </div>
+      <div class="calculator">
+        <input type="text" class="display" disabled />
+        <div class="keys">
+          <div class="calc-row">
+            <button value="C" class="operator" id="clear">C</button>
+            <button value="()" class="operator">()</button>
+            <button value="%" class="operator">%</button>
+            <button value="÷" class="operator">÷</button>
           </div>
-          <h1>Samsung</h1>
-          <div class="screen-exterior">
-            <div class="screen-container">
-              <div class="screen-top">
-                <div class="main-input-container">
-                  <label for="input" hidden>Main Input: </label>
-                  <input type="text" class="input" id="input" disabled />
-                </div>
-                <label for="display" hidden>Current Input: </label>
-                <input
-                  type="text"
-                  class="input"
-                  id="display"
-                  value=""
-                  disabled
-                />
-                <label for="clearLast" hidden>Clear Last: </label>
-                <input type="button" value="CE" class="input" id="clearLast" />
-              </div>
-              <div class="screen-bottom">
-                <div class="calc-row">
-                  <div class="button">
-                    <label for="clear" hidden>Clear: </label>
-                    <input
-                      type="button"
-                      value="C"
-                      class="input input-btn"
-                      id="clear"
-                    />
-                  </div>
-                  <div class="button green">()</div>
-                  <div class="button green">%</div>
-                  <div class="button">
-                    <label for="divide" hidden>Divide: </label>
-                    <input
-                      type="button"
-                      value="÷"
-                      id="divide"
-                      class="operator input-btn"
-                    />
-                  </div>
-                </div>
-                <div class="calc-row">
-                  <div class="button">
-                    <label for="seven" hidden>Seven: </label>
-                    <input
-                      type="button"
-                      value="7"
-                      id="seven"
-                      class="number input-btn"
-                    />
-                  </div>
-                  <div class="button">
-                    <label for="eight" hidden>Eight: </label>
-                    <input
-                      type="button"
-                      value="8"
-                      id="eight"
-                      class="number input-btn"
-                    />
-                  </div>
-                  <div class="button">
-                    <label for="nine" hidden>Nine: </label>
-                    <input
-                      type="button"
-                      value="9"
-                      id="nine"
-                      class="number input-btn"
-                    />
-                  </div>
-                  <div class="button">
-                    <label for="multiply" hidden>Multiply: </label>
-                    <input
-                      type="button"
-                      value="*"
-                      id="multiply"
-                      class="operator input-btn"
-                    />
-                  </div>
-                </div>
-                <div class="calc-row">
-                  <div class="button">
-                    <label for="four" hidden>Four: </label>
-                    <input
-                      type="button"
-                      value="4"
-                      id="four"
-                      class="number input-btn"
-                    />
-                  </div>
-                  <div class="button">
-                    <label for="five" hidden>Five: </label>
-                    <input
-                      type="button"
-                      value="5"
-                      id="five"
-                      class="number input-btn"
-                    />
-                  </div>
-                  <div class="button">
-                    <label for="six" hidden>Six: </label>
-                    <input
-                      type="button"
-                      value="6"
-                      id="six"
-                      class="number input-btn"
-                    />
-                  </div>
-                  <div class="button">
-                    <label for="subtract" hidden>Subtract: </label>
-                    <input
-                      type="button"
-                      value="-"
-                      id="subtract"
-                      class="operator input-btn"
-                    />
-                  </div>
-                </div>
-                <div class="calc-row">
-                  <div class="button">
-                    <label for="one" hidden>One: </label>
-                    <input
-                      type="button"
-                      value="1"
-                      id="one"
-                      class="number input-btn"
-                    />
-                  </div>
-                  <div class="button">
-                    <label for="two" hidden>Two: </label>
-                    <input
-                      type="button"
-                      value="2"
-                      id="two"
-                      class="number input-btn"
-                    />
-                  </div>
-                  <div class="button">
-                    <label for="three" hidden>Three: </label>
-                    <input
-                      type="button"
-                      value="3"
-                      id="three"
-                      class="number input-btn"
-                    />
-                  </div>
-                  <div class="button">
-                    <label for="add" hidden>Add: </label>
-                    <input
-                      type="button"
-                      value="+"
-                      id="add"
-                      class="operator input-btn"
-                    />
-                  </div>
-                </div>
-                <div class="calc-row">
-                  <div class="button">+/-</div>
-                  <div class="button">
-                    <label for="zero" hidden>Zero: </label>
-                    <input
-                      type="button"
-                      value="0"
-                      id="zero"
-                      class="number input-btn"
-                    />
-                  </div>
-                  <div class="button">
-                    <label for="decimal" hidden>Decimal: </label>
-                    <input
-                      type="button"
-                      value="."
-                      id="decimal"
-                      class="number input-btn"
-                    />
-                  </div>
-                  <div class="button equals-div">
-                    <label for="equals" hidden>Calculate: </label>
-                    <input
-                      type="button"
-                      value="="
-                      id="equals"
-                      class="equals input-btn"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cover-circle"></div>
+        </div>
+        <div class="calc-row">
+          <button value="7">7</button>
+          <button value="8">8</button>
+          <button value="9">9</button>
+          <button value="*" class="operator">&times;</button>
+        </div>
+        <div class="calc-row">
+          <button value="4">4</button>
+          <button value="5">5</button>
+          <button value="6">6</button>
+          <button value="-" class="operator">-</button>
+        </div>
+        <div class="calc-row">
+          <button value="1">1</button>
+          <button value="2">2</button>
+          <button value="3">3</button>
+          <button value="+" class="operator">+</button>
+        </div>
+        <div class="calc-row">
+          <button value="+/-">+/-</button>
+          <button value="0">0</button>
+          <button value=".">.</button>
+          <button value="=" class="operator" id="equals">=</button>
         </div>
       </div>
     </main>
