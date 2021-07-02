@@ -7,7 +7,6 @@
 body {
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +19,6 @@ body {
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 0 0 1px silver;
-  /* padding-bottom: 1rem; */
 }
 
 .display {
@@ -30,14 +28,6 @@ body {
   padding: 0.625rem;
   font-size: 2rem;
   text-align: right;
-  /* border-top-left-radius: 8px; */
-  /* border-top-right-radius: 8px; */
-}
-
-.calc-row {
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #eee;
 }
 
 button {
